@@ -42,6 +42,10 @@ public class RegistryHandler {
     public static final RegistryObject<ShovelItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () -> new ShovelItem(ModItemTier.RUBY, 3, -1.9F
             , new Item.Properties().group(RubyOreMod.TAB)));
 
+    //Hoe
+    public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe", () -> new HoeItem(ModItemTier.RUBY, -1.1F
+            , new Item.Properties().group(RubyOreMod.TAB)));
+
     //Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
 

@@ -1,10 +1,11 @@
 {
   "item.rubyoremod.ruby": "Ruby",
   "block.rubyoremod.ruby_block": "Ruby Block",
-  "itemGroup.oreTab": "Ore",
   "item.rubyoremod.ruby_sword": "Ruby Sword",
   "item.rubyoremod.ruby_pickaxe": "Ruby Pickaxe",
   "item.rubyoremod.ruby_axe": "Ruby Axe",
-  "item.rubyoremod.ruby_shovel": "Ruby Shovel"
+  "item.rubyoremod.ruby_shovel": "Ruby Shovel",
+  "item.rubyoremod.ruby_hoe": "Ruby Hoe",
+  "itemGroup.oreTab": "Ore"
 
 }
