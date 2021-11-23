@@ -3,7 +3,7 @@ modLoader="javafml" #mandatory
 loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 issueTrackerURL="http://my.issue.tracker/" #optional
 [[mods]] #mandatory
-modId="tutorial" #mandatory
+modId="rubyoremod" #mandatory
 version="1.15.2-1.0.0" #mandatory
 displayName="Munanyo" #mandatory
 updateJSONURL="http://myurl.me/" #optional
@@ -14,7 +14,7 @@ authors="Mingu" #optional
 description='''
 A practice mod for minecraft'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.examplemod]] #optional
+[[dependencies.rubyoremod]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -26,7 +26,7 @@ A practice mod for minecraft'''
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.examplemod]]
+[[dependencies.rubyoremod]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.2]"
