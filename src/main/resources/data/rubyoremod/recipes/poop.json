@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    "xxx",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:dirt_block"
+    }
+  },
+  "result":
+  {
+    "item": "rubyoremod:poop",
+    "count": 1
+  }
+}

@@ -6,6 +6,12 @@
   "item.rubyoremod.ruby_axe": "Ruby Axe",
   "item.rubyoremod.ruby_shovel": "Ruby Shovel",
   "item.rubyoremod.ruby_hoe": "Ruby Hoe",
+  "item.rubyoremod.ruby_helmet": "Ruby Helmet",
+  "item.rubyoremod.ruby_chestplate": "Ruby Chest Plate",
+  "item.rubyoremod.ruby_leggings": "Ruby Leggings",
+  "item.rubyoremod.ruby_boots": "Ruby Boots",
+  "item.rubyoremod.poop": "Poop",
+  "item.rubyoremod.amongus": "Among Us Shit Head",
   "itemGroup.oreTab": "Ore"
 
 }
