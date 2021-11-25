@@ -4,13 +4,13 @@ loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft versio
 issueTrackerURL="http://my.issue.tracker/" #optional
 [[mods]] #mandatory
 modId="rubyoremod" #mandatory
-version="1.15.2-1.0.0" #mandatory
-displayName="Munanyo" #mandatory
+version="1.16.1-1.0.0" #mandatory
+displayName="Addon for Minecraft" #mandatory
 updateJSONURL="http://myurl.me/" #optional
 displayURL="http://example.com/" #optional
-logoFile="examplemod.png" #optional
+logoFile="ruby.png" #optional
 credits="Thanks for this example mod goes to Java" #optional
 authors="Mingu" #optional
 description='''
-A practice mod for minecraft'''
+Addons for your basic ass Minecraft'''
 

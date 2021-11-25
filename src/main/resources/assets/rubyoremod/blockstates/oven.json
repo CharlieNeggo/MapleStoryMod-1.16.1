@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "rubyoremod:block/oven" },
+    "facing=south": { "model": "rubyoremod:block/oven", "y":  180},
+    "facing=west": { "model": "rubyoremod:block/oven", "y":  270},
+    "facing=east": { "model": "rubyoremod:block/oven", "y":  90}
+  }
+}

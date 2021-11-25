@@ -3,19 +3,23 @@
   "pattern":
   [
     " x ",
-    "xxx",
+    " d ",
     "   "
   ],
   "key":
   {
     "x":
     {
-      "item": "minecraft:dirt"
+      "item": "rubyoremod:amongus"
+    },
+    "d":
+    {
+      "item": "rubyoremod:poop"
     }
   },
   "result":
   {
-    "item": "rubyoremod:poop",
+    "item": "rubyoremod:dick",
     "count": 1
   }
 }

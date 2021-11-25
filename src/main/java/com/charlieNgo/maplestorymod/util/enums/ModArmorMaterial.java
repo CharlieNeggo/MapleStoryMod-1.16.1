@@ -1,7 +1,7 @@
-package com.charlieNgo.rubyoremod.armor;
+package com.charlieNgo.maplestorymod.util.enums;
 
-import com.charlieNgo.rubyoremod.RubyOreMod;
-import com.charlieNgo.rubyoremod.util.RegistryHandler;
+import com.charlieNgo.maplestorymod.MapleStoryMod;
+import com.charlieNgo.maplestorymod.init.ModItems;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -14,8 +14,8 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
 
-    RUBY(RubyOreMod.MOD_ID + ":ruby", 50, new int [] { 4, 7, 9, 4 }, 20,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 3.0F, () -> { return Ingredient.fromItems(RegistryHandler.RUBY.get()); });
+    RUBY(MapleStoryMod.MOD_ID + ":ruby", 50, new int [] { 4, 7, 9, 4 }, 20,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 3.0F, () -> { return Ingredient.fromItems(ModItems.RUBY.get()); }, 1);
 
     private static final int [] MAX_DAMAGE_ARRAY = new int [] { 11, 16, 15, 13 };
     private final String name;
@@ -25,9 +25,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     private final SoundEvent soundEvent;
     private final float toughness;
     private final Supplier<Ingredient> repairMaterial;
+    private final float knockbackResistance;
 
     ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantabiltiy, SoundEvent soundEvent, float toughness, Supplier<Ingredient>
-                     repairMaterial) {
+                     repairMaterial, float knockbackResistance) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmountArray = damageReductionAmountArray;
@@ -35,6 +36,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
         this.soundEvent = soundEvent;
         this.toughness = toughness;
         this.repairMaterial = repairMaterial;
+        this.knockbackResistance = knockbackResistance;
     }
 
     @Override
@@ -70,5 +72,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     @Override
     public float getToughness() {
         return this.toughness;
+    }
+
+    @Override
+    public float func_230304_f_() {
+        return this.knockbackResistance;
     }
 }

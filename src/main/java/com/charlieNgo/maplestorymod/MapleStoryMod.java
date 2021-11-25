@@ -1,7 +1,8 @@
-package com.charlieNgo.rubyoremod;
+package com.charlieNgo.maplestorymod;
 
 
-import com.charlieNgo.rubyoremod.util.RegistryHandler;
+import com.charlieNgo.maplestorymod.init.ModBlocks;
+import com.charlieNgo.maplestorymod.init.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,17 +15,18 @@ import org.apache.logging.log4j.Logger;
 
 
 @Mod("rubyoremod")
-public class RubyOreMod
+public class MapleStoryMod
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "rubyoremod";
 
-    public RubyOreMod() {
+    public MapleStoryMod() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.init();
+        ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -41,7 +43,7 @@ public class RubyOreMod
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.RUBY.get());
+            return new ItemStack(ModItems.RUBY.get());
         }
     };
 }

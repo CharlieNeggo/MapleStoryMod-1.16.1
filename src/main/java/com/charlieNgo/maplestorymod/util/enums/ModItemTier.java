@@ -1,15 +1,14 @@
-package com.charlieNgo.rubyoremod.tools;
+package com.charlieNgo.maplestorymod.util.enums;
 
-import com.charlieNgo.rubyoremod.util.RegistryHandler;
+import com.charlieNgo.maplestorymod.init.ModItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraftforge.fml.RegistryObject;
 
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
-    RUBY(3, 1700, 10.5F, 3.0F, 12, () -> {
-        return Ingredient.fromItems(RegistryHandler.RUBY.get());
+    RUBY(2, 1700, 10.5F, 3.0F, 12, () -> {
+        return Ingredient.fromItems(ModItems.RUBY.get());
     });
 
     private final int harvestLevel;

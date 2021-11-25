@@ -1,4 +1,4 @@
-package com.charlieNgo.rubyoremod.blocks;
+package com.charlieNgo.maplestorymod.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -8,10 +8,13 @@ import net.minecraftforge.common.ToolType;
 public class RubyBlock extends Block {
 
     public RubyBlock() {
-        super(Block.Properties.create(Material.IRON)
+        super(Properties.create(Material.IRON)
                 .hardnessAndResistance(5.0f, 6.0f)
                 .sound(SoundType.METAL)
                 .harvestLevel(2)
-                .harvestTool(ToolType.PICKAXE));
+                .harvestTool(ToolType.PICKAXE)
+                .setRequiresTool()
+                .setLightLevel(value -> 2));
+
     }
 }
