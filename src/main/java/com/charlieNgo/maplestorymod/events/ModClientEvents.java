@@ -1,7 +1,7 @@
 package com.charlieNgo.maplestorymod.events;
 
 import com.charlieNgo.maplestorymod.MapleStoryMod;
-import com.charlieNgo.maplestorymod.init.ModItems;
+import com.charlieNgo.maplestorymod.init.MapleModItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -29,7 +29,7 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void onDamageEntity(AttackEntityEvent event) {
-        if (event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.BLADE_ONE.get()) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.BLADE_ONE.get()) {
             if (event.getTarget().isAlive()) {
                 LivingEntity target = (LivingEntity) event.getTarget();
                 if (target instanceof Entity) {
@@ -40,6 +40,28 @@ public class ModClientEvents {
 
                     if (event.getPlayer().getEntityWorld().isRemote) {
                         String msg = TextFormatting.RED + "Poisoned and Slowed...";
+                        player.sendMessage(new StringTextComponent(msg), player.getUniqueID());
+                    }
+                }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onDamageEntityAxe(AttackEntityEvent event) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.RUBY_AXE.get()) {
+            if (event.getTarget().isAlive()) {
+                LivingEntity target = (LivingEntity) event.getTarget();
+                if (target instanceof Entity) {
+
+                    PlayerEntity player = event.getPlayer();
+                    target.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 10*20));
+                    target.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 10*30));
+                    target.addPotionEffect(new EffectInstance(Effects.WITHER, 10*30));
+
+
+                    if (event.getPlayer().getEntityWorld().isRemote) {
+                        String msg = TextFormatting.RED + "Weakened and Slowed...";
                         player.sendMessage(new StringTextComponent(msg), player.getUniqueID());
                     }
                 }

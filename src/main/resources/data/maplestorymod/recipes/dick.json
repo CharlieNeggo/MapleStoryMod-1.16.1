@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    " d ",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "maplestorymod:amongus"
+    },
+    "d":
+    {
+      "item": "maplestorymod:poop"
+    }
+  },
+  "result":
+  {
+    "item": "maplestorymod:dick",
+    "count": 1
+  }
+}

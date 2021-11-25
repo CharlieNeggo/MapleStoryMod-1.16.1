@@ -1,8 +1,8 @@
 package com.charlieNgo.maplestorymod;
 
 
-import com.charlieNgo.maplestorymod.init.ModBlocks;
-import com.charlieNgo.maplestorymod.init.ModItems;
+import com.charlieNgo.maplestorymod.init.MapleModBlocks;
+import com.charlieNgo.maplestorymod.init.MapleModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -14,19 +14,19 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-@Mod("rubyoremod")
+@Mod("maplestorymod")
 public class MapleStoryMod
 {
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
-    public static final String MOD_ID = "rubyoremod";
+    public static final String MOD_ID = "maplestorymod";
 
     public MapleStoryMod() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        MapleModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        MapleModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -43,7 +43,7 @@ public class MapleStoryMod
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModItems.RUBY.get());
+            return new ItemStack(MapleModItems.RUBY.get());
         }
     };
 }

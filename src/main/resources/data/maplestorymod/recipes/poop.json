@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    "xxx",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result":
+  {
+    "item": "maplestorymod:poop",
+    "count": 1
+  }
+}
