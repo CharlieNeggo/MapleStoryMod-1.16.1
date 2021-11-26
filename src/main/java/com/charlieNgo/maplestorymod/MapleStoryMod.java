@@ -1,11 +1,15 @@
 package com.charlieNgo.maplestorymod;
 
 
+import com.charlieNgo.maplestorymod.entities.MushRoom;
 import com.charlieNgo.maplestorymod.init.MapleModBlocks;
+import com.charlieNgo.maplestorymod.init.MapleModEntityTypes;
 import com.charlieNgo.maplestorymod.init.MapleModItems;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -27,19 +31,22 @@ public class MapleStoryMod
 
         MapleModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         MapleModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        MapleModEntityTypes.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+        DeferredWorkQueue.runLater(() -> {
+            GlobalEntityTypeAttributes.put(MapleModEntityTypes.MUSHROOM.get(), MushRoom.setCustomAttributes().create());
+        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
 
     }
 
-    public static final ItemGroup TAB = new ItemGroup("Ore Tab") {
+    public static final ItemGroup TAB = new ItemGroup("Maple Story Mod") {
 
         @Override
         public ItemStack createIcon() {

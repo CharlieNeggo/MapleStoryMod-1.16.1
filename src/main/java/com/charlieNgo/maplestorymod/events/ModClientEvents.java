@@ -28,8 +28,28 @@ public class ModClientEvents {
 //    }
 
     @SubscribeEvent
-    public static void onDamageEntity(AttackEntityEvent event) {
-        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.BLADE_ONE.get()) {
+    public static void onDamageEntityDualDagger(AttackEntityEvent event) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.DUAL_BLADE_DAGGER.get()) {
+            if (event.getTarget().isAlive()) {
+                LivingEntity target = (LivingEntity) event.getTarget();
+                if (target instanceof Entity) {
+
+                    PlayerEntity player = event.getPlayer();
+                    target.addPotionEffect(new EffectInstance(Effects.POISON, 10*20));
+                    target.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 10*20));
+
+                    if (event.getPlayer().getEntityWorld().isRemote) {
+                        String msg = TextFormatting.RED + "Poisoned and Slowed...";
+                        player.sendMessage(new StringTextComponent(msg), player.getUniqueID());
+                    }
+                }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onDamageEntityDualKatara(AttackEntityEvent event) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.DUAL_BLADE_KATARA.get()) {
             if (event.getTarget().isAlive()) {
                 LivingEntity target = (LivingEntity) event.getTarget();
                 if (target instanceof Entity) {
@@ -49,7 +69,7 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void onDamageEntityAxe(AttackEntityEvent event) {
-        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.RUBY_AXE.get()) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.ARAN_AXE_ONE.get()) {
             if (event.getTarget().isAlive()) {
                 LivingEntity target = (LivingEntity) event.getTarget();
                 if (target instanceof Entity) {
@@ -62,6 +82,69 @@ public class ModClientEvents {
 
                     if (event.getPlayer().getEntityWorld().isRemote) {
                         String msg = TextFormatting.RED + "Weakened and Slowed...";
+                        player.sendMessage(new StringTextComponent(msg), player.getUniqueID());
+                    }
+                }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onDamageEntityUtgardAxe(AttackEntityEvent event) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.UTGARD_POLEARM.get()) {
+            if (event.getTarget().isAlive()) {
+                LivingEntity target = (LivingEntity) event.getTarget();
+                if (target instanceof Entity) {
+
+                    PlayerEntity player = event.getPlayer();
+                    target.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 10*20));
+                    target.addPotionEffect(new EffectInstance(Effects.WEAKNESS, 10*30));
+                    target.addPotionEffect(new EffectInstance(Effects.WITHER, 10*30));
+
+
+                    if (event.getPlayer().getEntityWorld().isRemote) {
+                        String msg = TextFormatting.RED + "Weakened and Slowed...";
+                        player.sendMessage(new StringTextComponent(msg), player.getUniqueID());
+                    }
+                }
+            }
+        }
+    }
+
+
+    @SubscribeEvent
+    public static void onDamageEntityKaiserKaisereum(AttackEntityEvent event) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.KAISER_KAISREUM.get()) {
+            if (event.getTarget().isAlive()) {
+                LivingEntity target = (LivingEntity) event.getTarget();
+                if (target instanceof Entity) {
+
+                    PlayerEntity player = event.getPlayer();
+                    target.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 10*20));
+
+
+                    if (event.getPlayer().getEntityWorld().isRemote) {
+                        String msg = TextFormatting.RED + "Slowed...";
+                        player.sendMessage(new StringTextComponent(msg), player.getUniqueID());
+                    }
+                }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onDamageEntityUtgardTwoHandedSword(AttackEntityEvent event) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.UTGARD_TWOHANDED_SWORD.get()) {
+            if (event.getTarget().isAlive()) {
+                LivingEntity target = (LivingEntity) event.getTarget();
+                if (target instanceof Entity) {
+
+                    PlayerEntity player = event.getPlayer();
+                    target.addPotionEffect(new EffectInstance(Effects.SLOWNESS, 10*20));
+
+
+                    if (event.getPlayer().getEntityWorld().isRemote) {
+                        String msg = TextFormatting.RED + "Slowed...";
                         player.sendMessage(new StringTextComponent(msg), player.getUniqueID());
                     }
                 }

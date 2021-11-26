@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "maplestorymod:items/ruby_axe"
+    "layer0": "maplestorymod:items/aran_axe_one"
   }
 }

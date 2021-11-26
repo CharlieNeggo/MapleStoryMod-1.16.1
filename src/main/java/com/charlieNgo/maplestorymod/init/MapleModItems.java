@@ -3,6 +3,7 @@ package com.charlieNgo.maplestorymod.init;
 import com.charlieNgo.maplestorymod.MapleStoryMod;
 import com.charlieNgo.maplestorymod.blocks.BlockItemBase;
 import com.charlieNgo.maplestorymod.items.Amongus;
+//import com.charlieNgo.maplestorymod.items.Elixir;
 import com.charlieNgo.maplestorymod.items.ItemBase;
 import com.charlieNgo.maplestorymod.items.Poop;
 import com.charlieNgo.maplestorymod.util.enums.MapleModArmorMaterial;
@@ -22,24 +23,47 @@ public class MapleModItems {
 
     public static final RegistryObject<Poop> POOP = ITEMS.register("poop", Poop::new);
 
+//    public static final RegistryObject<Elixir> ELIXIR = ITEMS.register("elixir", Elixir::new);
+
     public static final RegistryObject<Amongus> AMONGUS = ITEMS.register("amongus", Amongus::new);
 
 
     // Tools
-    public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItem(MapleModItemTier.RUBY, 6, -1.5F
+    //Kaiser Sword
+    public static final RegistryObject<SwordItem> KAISER_KAISREUM = ITEMS.register("kaiser_kaisereum", () -> new SwordItem(MapleModItemTier.RUBY, 6, -2.0F
             , new Item.Properties().group(MapleStoryMod.TAB)));
 
-    public static final RegistryObject<SwordItem> BLADE_ONE = ITEMS.register("blade_one", () -> new SwordItem(MapleModItemTier.RUBY, 6, -0.5F
+    //Dual Blade Dagger
+    public static final RegistryObject<SwordItem> DUAL_BLADE_DAGGER = ITEMS.register("dual_blade_dagger", () -> new SwordItem(MapleModItemTier.RUBY, 6, 0.5F
+            , new Item.Properties().group(MapleStoryMod.TAB)));
+
+    public static final RegistryObject<SwordItem> DUAL_BLADE_KATARA = ITEMS.register("dual_blade_katara", () -> new SwordItem(MapleModItemTier.RUBY, 6, 0.5F
             , new Item.Properties().group(MapleStoryMod.TAB)));
 
     public static final RegistryObject<SwordItem> DICK = ITEMS.register("dick", () -> new SwordItem(MapleModItemTier.RUBY, 100, -0.5F
             , new Item.Properties().group(MapleStoryMod.TAB)));
 
+    //
     public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItem(MapleModItemTier.RUBY, 4, -1.7F
             , new Item.Properties().group(MapleStoryMod.TAB)));
 
-    public static final RegistryObject<AxeItem> RUBY_AXE = ITEMS.register("ruby_axe", () -> new AxeItem(MapleModItemTier.RUBY, 8, -2.0F
+    //Aran Axe
+    public static final RegistryObject<AxeItem> ARAN_AXE_ONE = ITEMS.register("aran_axe_one", () -> new AxeItem(MapleModItemTier.RUBY, 8, -3.0F
             , new Item.Properties().group(MapleStoryMod.TAB)));
+
+    //Utgard Set for weapons
+    public static final RegistryObject<AxeItem> UTGARD_POLEARM = ITEMS.register("utgard_polearm", () -> new AxeItem(MapleModItemTier.RUBY, 11, -3.0F
+            , new Item.Properties().group(MapleStoryMod.TAB)));
+
+    public static final RegistryObject<SwordItem> UTGARD_TWOHANDED_SWORD = ITEMS.register("utgard_twohanded_sword", () -> new SwordItem(MapleModItemTier.RUBY, 11, -2.0F
+            , new Item.Properties().group(MapleStoryMod.TAB)));
+
+    public static final RegistryObject<SwordItem> UTGARD_DAGGER = ITEMS.register("utgard_dagger", () -> new SwordItem(MapleModItemTier.RUBY, 11, 0.5F
+            , new Item.Properties().group(MapleStoryMod.TAB)));
+
+    public static final RegistryObject<SwordItem> UTGARD_KATARA = ITEMS.register("utgard_katara", () -> new SwordItem(MapleModItemTier.RUBY, 6, 0.5F
+            , new Item.Properties().group(MapleStoryMod.TAB)));
+
 
     public static final RegistryObject<ShovelItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () -> new ShovelItem(MapleModItemTier.RUBY, 3, -1.9F
             , new Item.Properties().group(MapleStoryMod.TAB)));

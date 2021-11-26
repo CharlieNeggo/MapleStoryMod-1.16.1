@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "maplestorymod:items/blade_one"
+    "layer0": "maplestorymod:items/utgard_polearm"
   }
 }

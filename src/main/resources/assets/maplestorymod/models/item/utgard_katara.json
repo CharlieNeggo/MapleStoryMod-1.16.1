@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "maplestorymod:items/ruby_sword"
+    "layer0": "maplestorymod:items/utgard_katara"
   }
 }
