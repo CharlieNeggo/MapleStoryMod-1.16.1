@@ -5,6 +5,7 @@ import com.charlieNgo.maplestorymod.entities.MushRoom;
 import com.charlieNgo.maplestorymod.init.MapleModBlocks;
 import com.charlieNgo.maplestorymod.init.MapleModEntityTypes;
 import com.charlieNgo.maplestorymod.init.MapleModItems;
+import com.charlieNgo.maplestorymod.init.MapleUtgardSetItems;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -31,6 +32,7 @@ public class MapleStoryMod
 
         MapleModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         MapleModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        MapleUtgardSetItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         MapleModEntityTypes.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);

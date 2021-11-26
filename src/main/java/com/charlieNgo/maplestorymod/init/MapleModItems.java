@@ -48,28 +48,15 @@ public class MapleModItems {
     public static final RegistryObject<AxeItem> ARAN_AXE_ONE = ITEMS.register("aran_axe_one", () -> new AxeItem(MapleModItemTier.RUBY, 8, -3.0F
             , new Item.Properties().group(MapleStoryMod.TAB)));
 
-    //Utgard Set for weapons
-    public static final RegistryObject<AxeItem> UTGARD_POLEARM = ITEMS.register("utgard_polearm", () -> new AxeItem(MapleModItemTier.RUBY, 11, -3.0F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
 
-    public static final RegistryObject<SwordItem> UTGARD_TWOHANDED_SWORD = ITEMS.register("utgard_twohanded_sword", () -> new SwordItem(MapleModItemTier.RUBY, 11, -2.0F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
-
-    public static final RegistryObject<SwordItem> UTGARD_DAGGER = ITEMS.register("utgard_dagger", () -> new SwordItem(MapleModItemTier.RUBY, 11, 0.5F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
-
-    public static final RegistryObject<SwordItem> UTGARD_KATARA = ITEMS.register("utgard_katara", () -> new SwordItem(MapleModItemTier.RUBY, 6, 0.5F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
-
-
-    public static final RegistryObject<ShovelItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () -> new ShovelItem(MapleModItemTier.RUBY, 3, -1.9F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
-
-    public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe", () -> new HoeItem(MapleModItemTier.RUBY, -1,-1.1F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
-
-    public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItem(MapleModItemTier.RUBY, 4, -1.7F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
+//    public static final RegistryObject<ShovelItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel", () -> new ShovelItem(MapleModItemTier.RUBY, 3, -1.9F
+//            , new Item.Properties().group(MapleStoryMod.TAB)));
+//
+//    public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe", () -> new HoeItem(MapleModItemTier.RUBY, -1,-1.1F
+//            , new Item.Properties().group(MapleStoryMod.TAB)));
+//
+//    public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItem(MapleModItemTier.RUBY, 4, -1.7F
+//            , new Item.Properties().group(MapleStoryMod.TAB)));
 
     public static final RegistryObject<SwordItem> DICK = ITEMS.register("dick", () -> new SwordItem(MapleModItemTier.RUBY, 100, -0.5F
             , new Item.Properties().group(MapleStoryMod.TAB)));

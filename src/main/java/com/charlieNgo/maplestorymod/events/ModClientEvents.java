@@ -2,6 +2,7 @@ package com.charlieNgo.maplestorymod.events;
 
 import com.charlieNgo.maplestorymod.MapleStoryMod;
 import com.charlieNgo.maplestorymod.init.MapleModItems;
+import com.charlieNgo.maplestorymod.init.MapleUtgardSetItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -91,7 +92,7 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void onDamageEntityUtgardAxe(AttackEntityEvent event) {
-        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.UTGARD_POLEARM.get()) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleUtgardSetItems.UTGARD_POLEARM.get()) {
             if (event.getTarget().isAlive()) {
                 LivingEntity target = (LivingEntity) event.getTarget();
                 if (target instanceof Entity) {
@@ -134,7 +135,7 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void onDamageEntityUtgardTwoHandedSword(AttackEntityEvent event) {
-        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleModItems.UTGARD_TWOHANDED_SWORD.get()) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == MapleUtgardSetItems.UTGARD_TWOHANDED_SWORD.get()) {
             if (event.getTarget().isAlive()) {
                 LivingEntity target = (LivingEntity) event.getTarget();
                 if (target instanceof Entity) {
