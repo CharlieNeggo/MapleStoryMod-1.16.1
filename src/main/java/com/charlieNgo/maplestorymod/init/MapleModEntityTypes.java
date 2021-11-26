@@ -14,7 +14,7 @@ public class MapleModEntityTypes {
     public static DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES,MapleStoryMod.MOD_ID);
 
     public static final RegistryObject<EntityType<MushRoom>> MUSHROOM = ENTITY_TYPES.register("mushroom", () -> EntityType.Builder.create(MushRoom::new
-    , EntityClassification.CREATURE)
+    , EntityClassification.MONSTER)
             .size(1.0f, 1.0f)
             .build(new ResourceLocation(MapleStoryMod.MOD_ID, "mushroom").toString()));
 }

@@ -5,6 +5,7 @@ import com.charlieNgo.maplestorymod.blocks.BlockItemBase;
 import com.charlieNgo.maplestorymod.items.Amongus;
 //import com.charlieNgo.maplestorymod.items.Elixir;
 import com.charlieNgo.maplestorymod.items.ItemBase;
+import com.charlieNgo.maplestorymod.items.MapleModSpawnEggItem;
 import com.charlieNgo.maplestorymod.items.Poop;
 import com.charlieNgo.maplestorymod.util.enums.MapleModArmorMaterial;
 import com.charlieNgo.maplestorymod.util.enums.MapleModItemTier;
@@ -26,6 +27,9 @@ public class MapleModItems {
 //    public static final RegistryObject<Elixir> ELIXIR = ITEMS.register("elixir", Elixir::new);
 
     public static final RegistryObject<Amongus> AMONGUS = ITEMS.register("amongus", Amongus::new);
+
+    public static final RegistryObject<MapleModSpawnEggItem> MUSHROOM_SPAWN_EGG = ITEMS.register("mushroom_spawn_egg", () -> new MapleModSpawnEggItem
+            (MapleModEntityTypes.MUSHROOM, 0xF1BF7B, 0x705128, new Item.Properties().group(MapleStoryMod.TAB)));
 
 
     // Tools
