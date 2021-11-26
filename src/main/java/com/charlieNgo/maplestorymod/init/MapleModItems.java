@@ -44,13 +44,6 @@ public class MapleModItems {
     public static final RegistryObject<SwordItem> DUAL_BLADE_KATARA = ITEMS.register("dual_blade_katara", () -> new SwordItem(MapleModItemTier.RUBY, 6, 0.5F
             , new Item.Properties().group(MapleStoryMod.TAB)));
 
-    public static final RegistryObject<SwordItem> DICK = ITEMS.register("dick", () -> new SwordItem(MapleModItemTier.RUBY, 100, -0.5F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
-
-    //
-    public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItem(MapleModItemTier.RUBY, 4, -1.7F
-            , new Item.Properties().group(MapleStoryMod.TAB)));
-
     //Aran Axe
     public static final RegistryObject<AxeItem> ARAN_AXE_ONE = ITEMS.register("aran_axe_one", () -> new AxeItem(MapleModItemTier.RUBY, 8, -3.0F
             , new Item.Properties().group(MapleStoryMod.TAB)));
@@ -73,6 +66,12 @@ public class MapleModItems {
             , new Item.Properties().group(MapleStoryMod.TAB)));
 
     public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe", () -> new HoeItem(MapleModItemTier.RUBY, -1,-1.1F
+            , new Item.Properties().group(MapleStoryMod.TAB)));
+
+    public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItem(MapleModItemTier.RUBY, 4, -1.7F
+            , new Item.Properties().group(MapleStoryMod.TAB)));
+
+    public static final RegistryObject<SwordItem> DICK = ITEMS.register("dick", () -> new SwordItem(MapleModItemTier.RUBY, 100, -0.5F
             , new Item.Properties().group(MapleStoryMod.TAB)));
 
     //Armor
