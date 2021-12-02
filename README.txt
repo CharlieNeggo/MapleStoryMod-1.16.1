@@ -1,5 +1,5 @@
 -------------------------------------------
-Source installation information for modders
+Source installation information for MapleStory Addon
 -------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
 some small patches to the vanilla MCP source code, giving you and it access 
@@ -48,6 +48,7 @@ installation process, no further action is required on your part.
 LexManos' Install Video
 =======================
 https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
+Munanyo?????
 
 For more details update more often refer to the Forge Forums:
 http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
