@@ -12,6 +12,7 @@
 
   "item.maplestorymod.arcane_essence": "Arcane Essence",
   "item.maplestorymod.absolab_essence": "AbsoLab Essence",
+  "item.maplestorymod.cra": "CRA Shard",
 
   "item.maplestorymod.dual_blade_dagger": "Dual Blade's Dagger",
   "item.maplestorymod.dual_blade_katara": "Dual Blade's Katara",
@@ -62,5 +63,5 @@
   "item.maplestorymod.blue_snail_spawn_egg": "Blue Snail Spawn Egg",
   "item.maplestorymod.green_slime_spawn_egg": "Green Slime Spawn Egg",
 
-  "itemGroup.maplestorymod": "MapleStory Mod"
+  "itemGroup.maplestorymod": "Maple Story Mod"
 }

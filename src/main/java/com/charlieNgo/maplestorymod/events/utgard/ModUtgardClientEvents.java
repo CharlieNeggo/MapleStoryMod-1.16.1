@@ -1,4 +1,4 @@
-package com.charlieNgo.maplestorymod.events;
+package com.charlieNgo.maplestorymod.events.utgard;
 
 import com.charlieNgo.maplestorymod.MapleStoryMod;
 import com.charlieNgo.maplestorymod.init.MapleUtgardSetItems;

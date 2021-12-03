@@ -45,12 +45,11 @@ public class MapleStoryMod
         });
     }
 
-
     private void doClientStuff(final FMLClientSetupEvent event) {
 
     }
 
-    public static final ItemGroup TAB = new ItemGroup("Maple Story Mod") {
+    public static final ItemGroup TAB = new ItemGroup("maplestorymod") {
 
         @Override
         public ItemStack createIcon() {

@@ -5,7 +5,7 @@ import com.charlieNgo.maplestorymod.client.render.BlueSnailRender;
 import com.charlieNgo.maplestorymod.client.render.GreenSlimeRender;
 import com.charlieNgo.maplestorymod.client.render.MushRoomRender;
 import com.charlieNgo.maplestorymod.init.MapleModEntityTypes;
-import com.charlieNgo.maplestorymod.items.Etc.MapleModSpawnEggItem;
+import com.charlieNgo.maplestorymod.items.MapleModSpawnEggItem;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.RegistryEvent;

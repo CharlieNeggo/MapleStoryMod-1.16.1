@@ -1,7 +1,19 @@
 {
+  "minecraft:recipes/food/cooked_chicken_from_smoking": {
+    "criteria": {
+      "has_chicken": "2021-12-02 22:18:04 -0500"
+    },
+    "done": true
+  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_something": "2021-12-02 13:31:26 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
+    "criteria": {
+      "has_chicken": "2021-12-02 22:18:04 -0500"
     },
     "done": true
   },
@@ -10,6 +22,12 @@
       "minecraft:plains": "2021-12-02 11:42:04 -0500"
     },
     "done": false
+  },
+  "minecraft:recipes/food/cooked_chicken": {
+    "criteria": {
+      "has_chicken": "2021-12-02 22:18:04 -0500"
+    },
+    "done": true
   },
   "DataVersion": 2567
 }
